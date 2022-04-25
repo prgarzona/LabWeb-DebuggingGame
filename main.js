@@ -35,6 +35,8 @@ function saltar() {
   const hole = agujeroRandom(holes);
 
   // 2. Agregar la clase 'up' al elemento 'hole' para que el bug aparezca
+  // Se agrega la clase up dentro de hole
+  hole.classList.add('up')
   setTimeout(() => {
     // 3. Eliminar la clase 'up' para que el bug desaparezca
 
