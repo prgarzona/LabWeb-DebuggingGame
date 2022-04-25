@@ -7,6 +7,7 @@ const bugs = document.querySelectorAll('.bug');
 let lastHole;
 let timeUp = false;
 let score = 0;
+let holes = document.querySelectorAll('.hole');
 
 // Retorna un tiempo aleatorio entre un rango definido
 function tiempoRandom(min, max) {
