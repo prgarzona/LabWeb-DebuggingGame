@@ -44,7 +44,11 @@ function saltar() {
     // Hace que un nuevo bug salte desde un agujero si el tiempo no ha terminado
     if (!timeUp) {
       saltar()
-    } 
+    }
+    // alerta para indicar que el tiempo llego a su limite
+    else {
+      alert('Se Acabo!!')
+    }
   }, time)
 }
 
@@ -75,3 +79,5 @@ keys.forEach(key => {
 })
 
 // 5. Hacer un bind del evento click del boton iniciar juego
+// para que inicie el juego a travez del boton
+document.getElementById('start').addEventListener('click', iniciarJuego);
