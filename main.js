@@ -69,4 +69,5 @@ function iniciarJuego() {
 
 // 4. Agregar el evento 'click' al todos los elementos 'bug'
 
+
 // 5. Hacer un bind del evento click del boton iniciar juego
