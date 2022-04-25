@@ -23,7 +23,7 @@ function agujeroRandom(holes) {
   if (lastHole === hole) {
     return agujeroRandom(holes);
   }
-  
+
   lastHole = hole;
   return hole
 }
@@ -39,9 +39,12 @@ function saltar() {
   hole.classList.add('up')
   setTimeout(() => {
     // 3. Eliminar la clase 'up' para que el bug desaparezca
-
+    //La clase se eliminara de todo hole.
+    hole.classList.remove('up')
     // Hace que un nuevo bug salte desde un agujero si el tiempo no ha terminado
-    if (!timeUp) saltar();
+    if (!timeUp) {
+      saltar()
+    } 
   }, time)
 }
 
