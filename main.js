@@ -68,6 +68,10 @@ function iniciarJuego() {
 
 
 // 4. Agregar el evento 'click' al todos los elementos 'bug'
-
+//se deja incluido para que seleccione todos los elementos bug, y se le asigne la funcion golpear
+const keys = document.querySelectorAll('.bug')
+keys.forEach(key => {
+  key.addEventListener('click', golpear)
+})
 
 // 5. Hacer un bind del evento click del boton iniciar juego
